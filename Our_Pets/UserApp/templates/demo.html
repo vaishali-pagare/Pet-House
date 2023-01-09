@@ -1,0 +1,40 @@
+<div class="container">
+    <hr>
+    <h3 class="text-center"><b>!!!...CHOOSE YOUR PETS...!!!</b></h3>
+    <hr>
+    <br>
+        <div class="row">
+			{%for ani in animl%}
+			
+				<div class="col-sm-6">
+				<div class="panel" style="width:380px">
+
+					
+					<div class="panel" style="background-color:black;"><center><img src="{{ani.image.url}}" class="img-circle" alt="Cinque Terre" width="200" height="200"></center></div>
+					<center>{{ani.category}}
+					<div class="box" >
+						<div class="percent" >
+							<svg>
+							
+							<circle cx="35" cy="35" r="35"></circle>
+							<circle cx="35" cy="35" r="35"></circle>
+							
+							</svg>
+	
+						</div>
+		
+					</div></center>
+				
+							
+					<div class="panel-footer" style="background-color:black;"><center><a href='readMore/{{pet.id}}'><button type="button" style="background-color:orange ;">>>>Read More<<<</button></a></center></div>
+		
+				</div>
+			
+
+        </div>
+      
+
+    {%endfor%}
+   
+  </div>
+</div>
